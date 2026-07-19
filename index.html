@@ -2,554 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ichwan Sholihin</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Ichwan Sholihin — Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="main-content">
-    <header class="container header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/hero.png" alt="">
-                </div>
-            </div>
-            <div class="right-header">
-                <h2 class="name">
-                    Hi, I'm <span>Ichwan Sholihin.</span>
-                    Software Developer at AXA
-                </h2>
-                <p>
-                    Have a strong passion for software developments. 
-                    Likes to share knowledge and experiences to anyone and also actively participating in various communities to contribute meaningful value for society.
-                </p>
-
-                    <div class="btn-con">
-                        <a href="https://github.com/ichwansh03" class="main-btn">
-                            <span class="btn-text">Github</span>
-                            <span class="btn-icon"><i class="fab fa-github"></i></span>
-                        </a>
-                    </div>
-    
-                    <div class="btn-con">
-                        <a href="https://www.linkedin.com/in/ichwan-sholihin/" class="main-btn">
-                            <span class="btn-text">LinkedIn</span>
-                            <span class="btn-icon"><i class="fab fa-linkedin"></i></span>
-                        </a>
-                    </div>
-                    
-    
-                    <div class="btn-con">
-                        <a href="https://ichwansholihin.medium.com/" class="main-btn">
-                            <span class="btn-text">Medium</span>
-                            <span class="btn-icon"><i class="fab fa-medium"></i></span>
-                        </a>
-                    </div>
-            </div>
+<body>
+    <header>
+        <div class="header-inner">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about-detail">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="switch-item">
+                        <div class="switch-wrapper">
+                            <span class="switch-icon sun">☀️</span>
+                            <label class="switch-label" for="themeSwitch">
+                                <input type="checkbox" id="themeSwitch">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="switch-icon moon">🌙</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <div class="overlay" id="overlay"></div>
+
     <main>
-        <section class="container about" id="about">
-            <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
-            </div>
-            <div>
-                <div>
-                    <p>
-                        Graduated from Bachelor of Informatics, Universitas Teknokrat Indonesia with ‘Cumlaude’ predicate in July 2023. 
-                        Now work as Software Developer in AXA Mandiri Financial Services for handling customer relationship management system with Salesforce CRM. 
-                        and Self-motivated problem solver with three years’ experience in Software Development (Back-End) using Java and Kotlin. 
-                        Designed and maintained the apps full stacks through planning, design and deployment. 
-                        Currently have several published apps in PlayStore and open-source Android project in Github, as well as several articles about Android Development written in Medium. 
-                        Have a good leadership and strong communication when joining and active in student activities, both external or internal campus organizations 
-                        and also strong passion for teaching and share experiences through lecturer assistant and instructor to 30-50 students per class.
-                    </p>
-                    <br>
-                    <div class="btn-con">
-                        <a href="#" class="main-btn">
-                            <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">Salesforce</p>
-                        <div class="progress-con">
-                            <p class="prog-text">
-                                Apex, Visualforce, Lightning Web Components, Flow Builder, Sales Cloud, Service Cloud, Salesforce Integrations.
-                            </p>
-                            
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Kotlin</p>
-                        <div class="progress-con">
-                            <p class="prog-text">
-                                RESTful API, Threading, Architecture Component, Clean Architecture, Dependency Injection, Unit Testing.
-                            </p>
-                            
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Java</p>
-                        <div class="progress-con">
-                            <p class="prog-text">Spring Boot, Quarkus, RxJava/Flow, Apache Maven, Unit Testing.</p>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Docker</p>
-                        <div class="progress-con">
-                            <p class="prog-text">Containerization, Orchestration, Image Management, Composition</p>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Redis</p>
-                        <div class="progress-con">
-                            <p class="prog-text">RDB Snapshot, Lua Scripting, Caching, Pub/Sub</p>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">C++</p>
-                        <div class="progress-con">
-                            <p class="prog-text">Competitive Programming</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <h4 class="stat-title">Education</h4>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <p class="tl-duration">September 2019 - July 2023</p>
-                    <h5>Undergraduated Student<span> - Universitas Teknokrat Indonesia</span></h5>
-                    <p>
-                        Current GPA: 3.70 (<a href="https://drive.google.com/file/d/17iEuDgJ_ICTb_SFpNcSzo5rhLZLWyzIo/view?usp=sharing"><u>view transcript</u></a>)
-                        and finalist in National Software Development Competition UNITY #10 UNY (<a href="https://drive.google.com/file/d/1zYmCEekRHoONu5WUCr3Zc-X_Bdl39xuG/view?usp=sharing"><u>view certificate</u></a>). 
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <p class="tl-duration">September 2021 - December 2021</p>
-                    <h5>Student Exchange<span> - Universitas Indonesia</span></h5>
-                    <p>
-                        Participating in Massive Open Online Course (MOOC) Parallel Programming (<a href="https://drive.google.com/file/d/1FaB2Eke4tiGr7svhQmr9JLJhaK6m1tXN/view?usp=sharing"><u>view transcript</u></a>).
-                    </p>
-                </div>
-            </div>
-
-            <h4 class="stat-title">Internship and Work Experiences</h4>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">October 2023 - Present</p>
-                    <h5>Software Developer<span> - AXA Indonesia</span></h5>
-                    <p>
-                        Contribute in CCC (Customer Care Center) department to develop feature demand with Apex, SOQL and Visualforce Page, support business analyst to create requirement flow and deployment to prod.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">January 2022 - September 2023</p>
-                    <h5>Lecturer Assistant and Lab Instructor<span> - Universitas Teknokrat Indonesia</span></h5>
-                    <p>
-                        Created the practice modules and helps lecturer to prepare lesson for class and teaching several practice course such as Mobile Programming, Object Oriented Programming (OOP), Software Development Planning (SDP) and Software Testing.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">June 2023 - August 2023</p>
-                    <h5>Mobile Engineer<span> - GOTO Impact Foundation</span></h5>
-                    <p>
-                        Participated at Generasi Gigih 3.0 program as Mobile Engineer and learning about Android software development such as Kotlin coroutines, architecture component, design pattern, 
-                        dependency injection and testing which is implemented in develop a final assignment about disaster apps by implementing REST API, MVVM, modularization, dependency injection, unit testing and etc. 
-                        As well as some soft skill course and English for business.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">July 2022 - September 2022</p>
-                    <h5>Mentee<span> - Digistar Class Telkom</span></h5>
-                    <p>
-                        Participated at Digistar Class 2022 apprenticeship program in Design Thinking and 
-                        Growth Mindset mentoring classes and learn soft skills courses such as making decisions, negotiating, building personal branding and also influencing other people.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">August 2021 - December 2021</p>
-                    <h5>Teacher and IT Support<span> - SDN 1 Rejomulyo</span></h5>
-                    <p>
-                        Helped teachers in class, provided the computer training for students and teachers and developed the digital library schools app for Android-based. 
-                    </p>
-                </div>
-            </div>
-
-            <h4 class="stat-title">Organization Experiences</h4>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-user-friends"></i>
-                    </div>
-                    <p class="tl-duration">December 2022 - Present</p>
-                    <h5>Head of development<span> - Media Komunikasi Alumni Rohis (MEKAR) Natar</span></h5>
-                    <p>
-                        Manage several Islamic spiritual organizations in Natar, South Lampung for provided mentoring and self-development lessons.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-user-friends"></i>
-                    </div>
-                    <p class="tl-duration">August 2021 - Present</p>
-                    <h5>Android Tutor<span> - UKM Programming Teknokrat</span></h5>
-                    <p>
-                        Held Android training for dozens of student activity members and was directly involved in campus apps development projects.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-user-friends"></i>
-                    </div>
-                    <p class="tl-duration">January 2022 - December 2022</p>
-                    <h5>General Secretary<span> - UKMI Ar-Rahman Teknokrat</span></h5>
-                    <p>
-                        Developing the organization's secretariat website and serving as the executive chairman for leadership and training activities.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-user-friends"></i>
-                    </div>
-                    <p class="tl-duration">January 2022 - July 2022</p>
-                    <h5>Development Participant<span> - BMKA Salman ITB</span></h5>
-                    <p>
-                        Participate in mentoring activity regarding leadership and individual development and also religious activities.
-                    </p>
-                </div>
-            </div>
-
-        </section>
-        <section class="container" id="portfolio">
-            <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
-            </div>
-            <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
-            </p>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/report.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Salesforce Report Generator</h3>
-                        <div class="icons">
-                            <a href="https://github.com/ichwansh03/sf-report-generator" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/alkarim.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>E-Report Sekolah Alam Al-Karim</h3>
-                        <div class="icons">
-                            <a href="https://github.com/ichwansh03/report-alkarim-be" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://github.com/ichwansh03/report-alkarim-fe" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/ngajiin.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Ngaji.in</h3>
-                        <div class="icons">
-                            <a href="https://github.com/ichwansh03/Ngaji.in" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.rohisnatardev.ichwan.appprojectplanb&hl=id-ID" class="icon">
-                                <i class="fab fa-google-play"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/bbq.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Modul BBQ UKMI Ar-Rahman</h3>
-                        <div class="icons">
-                            <a href="https://play.google.com/store/apps/details?id=com.teknokrat.modulbbq&hl=id-ID" class="icon">
-                                <i class="fab fa-google-play"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/pos.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Point of Sales Teknokrat</h3>
-                        <div class="icons">
-                            <a href="https://github.com/ichwansh03/android-pos" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/movie.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Movie App</h3>
-                        <div class="icons">
-                            <a href="https://github.com/ichwansh03/Movie-MVVM" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/cinematix.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Cinema Tix</h3>
-                        <div class="icons">
-                            <a href="https://github.com/ichwansh03/CinemaTix" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
+        <section class="hero" id="home">
+            <img src="assets/profile.png"
+                 alt="Profile of Ichwan Sholihin" class="hero-avatar" id="profileImage" loading="eager">
+            <h1>Ichwan Sholihin</h1>
+            <p class="tagline">Software Developer with 3+ years delivering scalable backend systems and measurable business impact across Java, Kotlin, and Salesforce ecosystems.</p>
+            
+            <div class="social-row">
+                <a href="https://github.com/ichwansh03" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/ichwan-sholihin" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://medium.com/@ichwansholihin" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Medium">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><ellipse cx="8" cy="12" rx="2.5" ry="3.5"/><ellipse cx="16" cy="12" rx="1.5" ry="3.5"/></svg>
+                    Medium
+                </a>
+                <a href="https://www.salesforce.com/trailblazer/ichwansholihin" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Salesforce">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 9.5a4 4 0 0 0-7.5-2A3.5 3.5 0 1 0 9 15h8.5a3 3 0 0 0 0-6z"/></svg>
+                    Salesforce
+                </a>
             </div>
         </section>
-        <section class="container" id="blogs">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>My <span>Blogs</span><span class="bg-text">My Articles</span></h2>
-                </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <img src="img/scholar.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                <a href="https://ejurnal.teknokrat.ac.id/index.php/JDMSI/article/view/2618">Design of a Web-Based New Member Registration Information System at UKMI Ar-Rahman Universitas Teknokrat Indonesia</a>
-                            </h4>
-                            <p>
-                                As one of the student activity which is a role model in the active role of students, especially those who are Muslim in the campus environment, 
-                                media publications are the most important thing to support the recruitment process as well as disseminate information about activities (Sholihin & Ariyani, 2023).
-                            </p>
-                        </div>
+
+        <section id="slides">
+            <span class="section-label">Slides</span>
+            <h2>Talks & Presentations</h2>
+            <div class="slide-list">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="slide-item">
+                    <img src="assets/slide-placeholder.svg" alt="" class="slide-thumb" width="160" height="90">
+                    <div class="slide-info">
+                        <h3>Introduction to JobRunr as a Background Job Library in Spring</h3>
+                        <p>Biweekly tech talk to implement background job processing in Spring apps.</p>
+                        <span class="tech-stack">2026 · AMFS Java Biweekly</span>
                     </div>
-                    <div class="blog">
-                        <img src="img/scholar.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                <a href="https://ejurnal.teknokrat.ac.id/index.php/JDMSI/article/view/2781">Decision Support System for Admission of Lecturer Assistants Using the Multi Attribute Utility Theory (MAUT) Method</a>
-                            </h4>
-                            <p>
-                                In this research, the MAUT method will be used to calculate the final grades of prospective assistant lecturers based on the test criteria they have passed with the aim of ensuring that the selection of assistant lecturers can proceed objectively (Sholihin, 2023).
-                            </p>
-                        </div>
+                </a>
+                <a href="https://prezi.com/view/gxsvTGWAEVV8TWaCiCQr/?referral_token=K_zjHmlnB3FN" target="_blank" rel="noopener noreferrer" class="slide-item">
+                    <img src="assets/ldkr_slide.png" alt="" class="slide-thumb" width="160" height="90">
+                    <div class="slide-info">
+                        <h3>Konsep Diri dalam Islam</h3>
+                        <p>Exploring the concept of self in Islamic philosophy.</p>
+                        <span class="tech-stack">2025 · LDK Rohis SMAN 43 Jakarta</span>
                     </div>
-                    <div class="blog">
-                        <img src="img/blog3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                <a href="https://ichwansholihin.medium.com/membangun-struktur-kode-yang-reusable-readable-dan-testable-dengan-dependency-injection-di-kotlin-f2d453f7b30f">Building Reusable, Readable and Testable Code Structures with Dependency Injection in Kotlin</a>
-                            </h4>
-                            <p>
-                                Implementing DI provides benefits such as code that is reusable (can be reused), readable (easy to read) and testable (easy to test) when implementing unit or instrument testing in its development.
-                            </p>
-                        </div>
+                </a>
+                <a href="https://docs.google.com/presentation/d/1oulhDgavENsphdc3jn7L1h1tyDo9hQRnGoP_JU7FRZ4/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="slide-item">
+                    <img src="assets/nki_slide.png" alt="" class="slide-thumb" width="160" height="90">
+                    <div class="slide-info">
+                        <h3>Pemuda: Adaptif dalam Pergaulan, Teguh dalam Nilai Keislaman</h3>
+                        <p>Talks about the role of youth in Islamic society.</p>
+                        <span class="tech-stack">2025 · NKI Rohis SMAN 43 Jakarta</span>
                     </div>
-                    <div class="blog">
-                        <img src="img/ktor.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                <a href="https://ichwansholihin.medium.com/ktor-alternatif-selain-spring-boot-untuk-back-end-service-di-kotlin-4ff1d258679b">Ktor: An Alternative to Spring Boot for Back-End Services in Kotlin</a>
-                            </h4>
-                            <p>
-                                Ktor has a more declarative approach and focuses on functional programming rather than Spring Boot with its annotation approach.
-                            </p>
-                        </div>
+                </a>
+                <a href="https://www.linkedin.com/in/ichwan-sholihin/overlay/Position/1983197085/treasury/?profileId=ACoAAC3G4MsBZwg1wU7LMVPmFCs3z_8ilIEwXcw" target="_blank" rel="noopener noreferrer" class="slide-item">
+                    <img src="assets/kotlin_slide.png" alt="" class="slide-thumb" width="160" height="90">
+                    <div class="slide-info">
+                        <h3>Basic Kotlin in Mobile Programming 2 Course</h3>
+                        <p>Introduction to Kotlin programming for mobile development.</p>
+                        <span class="tech-stack">2023 · Kuliah Pemrograman Mobile Teknokrat</span>
                     </div>
-                    <div class="blog">
-                        <img src="img/broadcast.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                <a href="https://ichwansholihin.medium.com/menangani-event-dari-aplikasi-lain-menggunakan-broadcast-receiver-ff4653b1b0e7">Handle Events from Other Applications Using Broadcast Receiver</a>
-                            </h4>
-                            <p>
-                                Broadcast Receiver is a component on Android that can send and receive messages about events that occur in other apps.
-                            </p>
-                        </div>
+                </a>
+                <a href="https://docs.google.com/document/d/1iMT7LU5Z7lP2aa_MBM1CHRVSzxUGqUFzZFilTYxKAhU/edit?usp=embed_facebook" target="_blank" rel="noopener noreferrer" class="slide-item">
+                    <img src="assets/ppl_slide.jpeg" alt="" class="slide-thumb" width="160" height="90">
+                    <div class="slide-info">
+                        <h3>Learning Module in Software Development Planning Course</h3>
+                        <p>Comprehensive guide to software development planning methodologies.</p>
+                        <span class="tech-stack">2022 · Kuliah Proyek Perangkat Lunak (PPL) Teknokrat</span>
                     </div>
-                    <div class="blog">
-                        <img src="img/blog1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                <a href="https://ichwansholihin.medium.com/menggunakan-buildsrc-dan-kotlin-dsl-dalam-pengelolaan-dependensi-di-gradle-525f46e77d62">Using buildSrc and Kotlin DSL in Dependency Management Gradle</a>
-                            </h4>
-                            <p>
-                                Discusses best practices for managing dependencies more efficiently using BuildSrc and the Kotlin DSL plugin in Gradle.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog2.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                <a href="https://ichwansholihin.medium.com/lakukan-hal-ini-untuk-mengamankan-akses-data-ke-server-saat-mengembangkan-aplikasi-android-9d1baf6f1e0">Do This to Secure Data Access to the Server when Developing Android Apps</a>
-                            </h4>
-                            <p>
-                                One way to ensure that the data in the Android application being developed remains safe and avoids the risk of theft of sensitive data.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </section>
-        <section class="container contact" id="contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
-                </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-                        <h4>Contact me here</h4>
-                        <p>
-                            I would be very happy if you would like to invite me to collaborate and discuss about software development
-                        </p>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location</span>
-                                </div>
-                                <p>
-                                    : South Lampung, Indonesia
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email</span>
-                                </div>
-                                <p>
-                                    <span>: ichwansholihin03@gmail.com</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
-                                </div>
-                                <p>
-                                    <span>: Bahasa, English</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="contact-icons">
-                            <div class="contact-icon">
-                                
-                                <a href="https://www.instagram.com/ichwan_sholihin/" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://github.com/ichwansh03" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/ichwan-sholihin/" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-contact">
-                        <form action="" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="mailto:ichwansholihin03@gmail.com" class="main-btn">
-                                    <span class="btn-text">Send</span>
-                                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
-                                </a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+
+        <section id="about-detail">
+            <span class="section-label">About</span>
+            <h2>I turn ideas into reliable software.</h2>
+            <p>A software developer with over three years of experiences, specializing in building scalable and secure enterprise systems using Java, Kotlin, and Salesforce. The journey began as a university student in 2019 then joining in forth semester as lecture assistant and instructor at Universitas Teknokrat Indonesia. Graduated in 2023 with <a href="https://www.teknokrat.ac.id" target="_blank" rel="noopener noreferrer">GPA 3.7/4.0</a>, followed by an apprenticeship at CODE ID as a backend developer contributing to an insurance platform built with Spring Boot and Quarkus, an experience that strengthened technical foundations in code structure, algorithmic thinking, and full-stack collaboration.</p>
+            <p>Currently serving as a Software Developer at AXA Mandiri Financial Services, with several high-impact backend initiatives delivered in support of digital transformation. A microservices-based migration of customer reporting from RPA to REST services was led, utilizing Apache Kafka and asynchronous Salesforce integrations, reducing annual licensing costs by 99.5% (from IDR 2 billion to IDR 10 million) while improving processing efficiency by 70%. Additional contributions include automation systems for internal policy and tax document processes with measurable annual savings, Salesforce reporting and call-handling enhancements that significantly reduced agent workload, remediation of Log4j vulnerabilities alongside the security team, and modernization of legacy SOAP-based systems into RESTful APIs.</p>
+            <p>Core technical expertise spans backend service development using Spring Boot and Quarkus across several microservices projects, Kotlin for Android-based mobile development, and proficiency in databases including MySQL, PostgreSQL, MSSQL, and MongoDB. Experience extends to secure API development, JWT authentication, API Gateway/Service Discovery, Docker-based cloud deployment, Apache Kafka streaming, and Salesforce CRM development using Apex, Visualforce and Lightning Web Components, complemented by open-source contributions on GitHub and knowledge shared through published articles on Medium. In addition also active as a mentor for the Islamic student association (Rohis) at SMAN 43 Jakarta.</p>
+        </section>
+
+        <section id="projects">
+            <span class="section-label">Projects</span>
+            <h2>Selected Work</h2>
+            <div class="card-grid">
+                <a href="https://github.com/ichwansh03/apexium-log" target="_blank" rel="noopener noreferrer" class="card"><h3>Apexium.log</h3><p>A Salesforce productivity tool that streamlines Debug Log management, automates Trace Flags, and extends debugging history.</p><span class="tech-stack">Spring · React</span></a>
+                <a href="https://github.com/ichwansh03/sf-report-generator" target="_blank" rel="noopener noreferrer" class="card"><h3>Salesforce Report Generator</h3><p>Generate SOQL queries and REST endpoint definitions directly from Salesforce reports.</p><span class="tech-stack">Apex · Visualforce</span></a>
+                <a href="https://github.com/ichwansh03/report-alkarim-be" target="_blank" rel="noopener noreferrer" class="card"><h3>Student Report Al-Karim</h3><p>Student daily report for parents and teachers monitoring for Sekolah Alam Al-Karim.</p><span class="tech-stack">Quarkus · Kotlin Android</span></a>
+                <a href="https://github.com/ichwansh03/android-pos" target="_blank" rel="noopener noreferrer" class="card"><h3>Point of Sales Teknokrat</h3><p>Point of Sales (PoS) for MSME around Bandar Lampung to selling digital products integrated by Midtrans payment gateway.</p><span class="tech-stack">PHP · Kotlin Android</span></a>
+                <a href="https://github.com/ichwansh03/AXA-SmartDrive" target="_blank" rel="noopener noreferrer" class="card"><h3>AXA Smart-Drive</h3><p>Smart Drive Insurance system for vehicle management and claims processing.</p><span class="tech-stack">Spring · React</span></a>
+                <a href="https://github.com/ichwansh03/CinemaTix" target="_blank" rel="noopener noreferrer" class="card"><h3>CinemaTix</h3><p>Cinema ticketing system with real-time availability and booking features.</p><span class="tech-stack">Kotlin Android</span></a>
             </div>
+        </section>
+
+        <section id="blogs">
+            <span class="section-label">Blogs</span>
+            <h2>Recent Writing</h2>
+            <ul class="blog-list">
+                <li><a href="https://medium.com/stackademic/how-salesforces-native-configuration-tools-can-replace-hardcoded-values-81c105f7a4c8" target="_blank" rel="noopener noreferrer"><span class="post-title">How Salesforce Native Configuration Tools Can Replace Hardcoded Values</span><span class="post-date">18 Jul 2026</span></a></li>
+                <li><a href="https://medium.com/stackademic/i-was-tired-of-salesforces-24-hour-trace-flag-limit-so-i-built-apexium-log-8b8b8b8b8b8b" target="_blank" rel="noopener noreferrer"><span class="post-title">I Was Tired of Salesforce`s 24-Hour Trace Flag Limit, So I Built Apexium.log</span><span class="post-date">09 Jul 2026</span></a></li>
+                <li><a href="https://medium.com/stackademic/generate-a-report-to-query-in-salesforce-with-report2soql-generator-7f420dce614b" target="_blank" rel="noopener noreferrer"><span class="post-title">Generate a Report to Query in Salesforce with Report2SOQL Generator</span><span class="post-date">12 Apr 2026</span></a></li>
+                <li><a href="https://medium.com/stackademic/redis-operations-explained-choosing-the-right-data-structure-for-the-right-problem-1d86cba10c03" target="_blank" rel="noopener noreferrer"><span class="post-title">Redis Operations Explained: Choosing the Right Data Structure for the Right Problem</span><span class="post-date">09 Feb 2026</span></a></li>
+                <li><a href="https://blog.stackademic.com/real-time-data-integration-with-salesforce-cdc-using-spring-and-cometd-b21c78e36bc5" target="_blank" rel="noopener noreferrer"><span class="post-title">Real-Time Data Integration with Salesforce CDC using Spring and CometD</span><span class="post-date">03 Feb 2026</span></a></li>
+                <li><a href="https://medium.com/stackademic/secure-integration-with-mutual-authentication-outbound-mtls-implementation-in-salesforce-4799ea96ec99" target="_blank" rel="noopener noreferrer"><span class="post-title">Secure Integration with Mutual Authentication (Outbound mTLS) Implementation in Salesforce</span><span class="post-date">04 Jan 2026</span></a></li>
+                <li><a href="https://medium.com/stackademic/how-i-prevents-async-apex-limits-on-salesforce-trigger-with-this-architecture-a39f2d207ed0" target="_blank" rel="noopener noreferrer"><span class="post-title">How I Prevents Async Apex Limits on Salesforce Trigger with This Architecture</span><span class="post-date">01 Dec 2025</span></a></li>
+                <li><a href="https://medium.com/stackademic/building-a-load-test-for-salesforce-async-workflows-with-gatling-60ae484214b7" target="_blank" rel="noopener noreferrer"><span class="post-title">Building a Load Test for Salesforce Async Workflows with Gatling</span><span class="post-date">01 Dec 2025</span></a></li>
+                <li><a href="https://medium.com/stackademic/streamlining-spring-development-with-jenkins-pipeline-on-docker-badb9073bda0" target="_blank" rel="noopener noreferrer"><span class="post-title">Streamlining Spring Development with Jenkins Pipeline on Docker</span><span class="post-date">20 Oct 2025</span></a></li>
+                <li><a href="https://medium.com/stackademic/change-data-capture-cdc-mechanism-with-debezium-and-operation-log-mongodb-bb2aea4456a7" target="_blank" rel="noopener noreferrer"><span class="post-title">Change Data Capture (CDC) Mechanism with Debezium and Operation Log MongoDB</span><span class="post-date">15 Oct 2025</span></a></li>
+                <li><a href="https://medium.com/stackademic/flexible-and-efficient-multi-messaging-approach-with-routing-kafka-template-in-spring-4bd3b86fbf8c" target="_blank" rel="noopener noreferrer"><span class="post-title">Flexible and Efficient Multi-Messaging Approach with Routing Kafka Template in Spring</span><span class="post-date">28 Sep 2025</span></a></li>
+                <li><a href="https://medium.com/stackademic/options-to-get-metadata-reports-in-salesforce-8b8b8b8b8b8b" target="_blank" rel="noopener noreferrer"><span class="post-title">Options to Get Metadata Reports in Salesforce</span><span class="post-date">25 Sep 2025</span></a></li>
+                <li><a href="https://medium.com/stackademic/optimizing-too-many-soql-process-in-salesforce-70d8d02e69a5" target="_blank" rel="noopener noreferrer"><span class="post-title">Optimizing Too Many SOQL Processes in Salesforce</span><span class="post-date">13 Sep 2025</span></a></li>
+                <li><a href="https://medium.com/stackademic/docker-compose-fundamental-for-java-services-e1a750041012" target="_blank" rel="noopener noreferrer"><span class="post-title">Getting to Know Docker Compose in Java: Effective Strategies for Containerization to Microservices</span><span class="post-date">2 Apr 2025</span></a></li>
+                <li><a href="https://medium.com/stackademic/remediation-vulnerability-migration-log4j-to-log4j2-in-apache-kafka-22cfde1f4d39" target="_blank" rel="noopener noreferrer"><span class="post-title">Remediation Vulnerability: Migration Log4j to Log4j2 in Apache Kafka</span><span class="post-date">29 Mar 2025</span></a></li>
+                <li><a href="https://medium.com/stackademic/some-best-practice-approaches-to-write-code-in-spring-mvc-ed35f201ef67" target="_blank" rel="noopener noreferrer"><span class="post-title">Some Best Practice Approaches to Write Code in Spring MVC</span><span class="post-date">29 Mar 2025</span></a></li>
+                <li><a href="https://medium.com/stackademic/asynchronous-processing-in-quarkus-with-jobrunr-58dd1604ba97" target="_blank" rel="noopener noreferrer"><span class="post-title">Asynchronous Processing in Quarkus with Jobrunr</span><span class="post-date">29 Dec 2024</span></a></li>
+                <li><a href="https://medium.com/stackademic/run-per-minute-scheduling-for-sending-email-in-apex-d72058d3c763" target="_blank" rel="noopener noreferrer"><span class="post-title">Run Per Minute Scheduling for Sending Email in Apex</span><span class="post-date">05 Dec 2024</span></a></li>
+                <li><a href="https://medium.com/stackademic/populating-dependent-picklist-values-based-on-controlling-picklist-in-apex-65f19a16b7de" target="_blank" rel="noopener noreferrer"><span class="post-title">Populating Dependent Picklist Values Based on Controlling Picklist in Apex</span><span class="post-date">27 Nov 2024</span></a></li>
+                <li><a href="https://medium.com/stackademic/customize-windows-command-prompt-instructions-with-batch-script-dd3100ffd747" target="_blank" rel="noopener noreferrer"><span class="post-title">Customize Windows Command Prompt Instructions with Batch Script</span><span class="post-date">23 Nov 2024</span></a></li>
+                <li><a href="https://medium.com/stackademic/cache-management-with-redis-in-spring-35751f70db90" target="_blank" rel="noopener noreferrer"><span class="post-title">Cache Management with Redis in Spring</span><span class="post-date">25 Feb 2024</span></a></li>
+                <li><a href="https://medium.com/stackademic/how-to-build-rest-api-and-test-with-quarkus-panache-orm-repository-pattern-quarkustest-c325794f1f3f" target="_blank" rel="noopener noreferrer"><span class="post-title">How to Build REST API and Test with Quarkus (Panache ORM, Repository Pattern and Rest-Assured)</span><span class="post-date">04 Feb 2024</span></a></li>
+                <li><a href="https://medium.com/stackademic/create-scheduled-and-monitoring-tasks-with-scheduling-and-spring-actuator-b61aa38417eb" target="_blank" rel="noopener noreferrer"><span class="post-title">Introduction to Spring Scheduling and Monitoring the Task with Spring Actuator</span><span class="post-date">24 Jan 2024</span></a></li>
+                <li><a href="https://medium.com/stackademic/prepare-for-ui-migration-from-xml-to-compose-in-android-014c5de2174e" target="_blank" rel="noopener noreferrer"><span class="post-title">Prepare for UI Migration from XML to Compose in Android</span><span class="post-date">16 Jan 2024</span></a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <span class="section-label">Contact</span>
+            <h2>Let's connect.</h2>
+            <p>Open to new opportunities, projects and collaboration. Reach out anytime.</p>
+            <p>📧 <strong>ichwansholihin70@gmail.com</strong> &nbsp;|&nbsp; 🐙 <strong>github.com/ichwansh03</strong></p>
         </section>
     </main>
 
-    <div class="controls">
-        <div class="control active-btn" data-id="home" >
-            <i class="fas fa-home"></i>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/ichwansh03" target="_blank" rel="noopener noreferrer">Instagram</a><a href="mailto:ichwansholihin70@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
         </div>
-        <div class="control" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control" data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="control" data-id="blogs">
-            <i class="far fa-newspaper"></i>
-        </div>
-        <div class="control" data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
-    </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
-    <script src="app.js"></script>
+        <p>© 2026 Ichwan Sholihin — Built with simplicity in mind.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
