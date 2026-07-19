@@ -173,13 +173,22 @@ main { max-width: 780px; margin: 0 auto; padding: 0 24px; }
     text-align: center;
     padding: 64px 0 48px;
 }
+.avatar-wrapper {
+    width: 116px; height: 116px;
+    margin-bottom: 24px;
+    border-radius: 50%;
+    border: 3px solid #00e47c;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 .hero-avatar {
-    width: 110px; height: 110px;
+    width: 100%; height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--border);
-    box-shadow: var(--shadow-md);
-    margin-bottom: 24px;
+    display: block;
     background: #e8e8e8;
     transition: transform 0.2s;
 }
@@ -219,24 +228,24 @@ main { max-width: 780px; margin: 0 auto; padding: 0 24px; }
     font-weight: 500;
     text-decoration: none;
     box-shadow:
-        -2px -2px 5px var(--neumo-light),
-        3px 3px 6px var(--neumo-dark);
+        -8px -8px 20px var(--neumo-light),
+        10px 10px 24px var(--neumo-dark);
     transition: box-shadow 0.25s ease, transform 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 .social-btn:hover {
     background: var(--card-hover-bg);
     color: var(--text);
     box-shadow:
-        -3px -3px 8px var(--neumo-light),
-        5px 5px 12px var(--neumo-dark);
+        -12px -12px 30px var(--neumo-light),
+        14px 14px 36px var(--neumo-dark);
     transform: translateY(-2px);
 }
 .social-btn:active {
     background: var(--card-active-bg);
     color: var(--text);
     box-shadow:
-        inset -1px -1px 3px var(--neumo-light),
-        inset 2px 2px 4px var(--neumo-dark);
+        inset -4px -4px 10px var(--neumo-light),
+        inset 5px 5px 12px var(--neumo-dark);
     transform: translateY(0);
 }
 
@@ -264,8 +273,8 @@ p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px; max-w
     border-radius: 12px;
     padding: 20px 22px;
     box-shadow:
-        -2px -2px 5px var(--neumo-light),
-        3px 3px 6px var(--neumo-dark);
+        -8px -8px 20px var(--neumo-light),
+        10px 10px 24px var(--neumo-dark);
     transition: box-shadow 0.25s ease, transform 0.2s ease, background 0.2s ease;
     text-decoration: none;
     color: inherit;
@@ -275,15 +284,15 @@ p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px; max-w
 .card:hover {
     background: var(--card-hover-bg);
     box-shadow:
-        -3px -3px 8px var(--neumo-light),
-        5px 5px 12px var(--neumo-dark);
+        -12px -12px 30px var(--neumo-light),
+        14px 14px 36px var(--neumo-dark);
     transform: translateY(-2px);
 }
 .card:active {
     background: var(--card-active-bg);
     box-shadow:
-        inset -1px -1px 3px var(--neumo-light),
-        inset 2px 2px 4px var(--neumo-dark);
+        inset -4px -4px 10px var(--neumo-light),
+        inset 5px 5px 12px var(--neumo-dark);
     transform: translateY(0);
 }
 .card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 6px; }
@@ -307,22 +316,22 @@ p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px; max-w
     text-decoration: none;
     color: inherit;
     box-shadow:
-        -2px -2px 5px var(--neumo-light),
-        3px 3px 6px var(--neumo-dark);
+        -8px -8px 20px var(--neumo-light),
+        10px 10px 24px var(--neumo-dark);
     transition: box-shadow 0.25s ease, transform 0.2s ease, background 0.2s ease;
 }
 .slide-item:hover {
     background: var(--card-hover-bg);
     box-shadow:
-        -3px -3px 8px var(--neumo-light),
-        5px 5px 12px var(--neumo-dark);
+        -12px -12px 30px var(--neumo-light),
+        14px 14px 36px var(--neumo-dark);
     transform: translateX(3px);
 }
 .slide-item:active {
     background: var(--card-active-bg);
     box-shadow:
-        inset -1px -1px 3px var(--neumo-light),
-        inset 2px 2px 4px var(--neumo-dark);
+        inset -4px -4px 10px var(--neumo-light),
+        inset 5px 5px 12px var(--neumo-dark);
     transform: translateX(0);
 }
 .slide-thumb {
