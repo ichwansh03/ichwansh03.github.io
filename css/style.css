@@ -215,6 +215,9 @@ main { max-width: 780px; margin: 0 auto; padding: 0 24px; }
     justify-content: center;
     margin-top: 20px;
 }
+#contact .social-row {
+    justify-content: flex-start;
+}
 .social-btn {
     display: inline-flex;
     align-items: center;
