@@ -273,8 +273,8 @@ p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px; max-w
 .card {
     background: var(--surface);
     border: none;
-    border-radius: 12px;
-    padding: 20px 22px;
+    border-radius: 16px;
+    padding: 20px 100px 24px 22px;
     box-shadow:
         -8px -8px 20px var(--neumo-light),
         10px 10px 24px var(--neumo-dark);
@@ -283,6 +283,8 @@ p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px; max-w
     color: inherit;
     display: block;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 .card:hover {
     background: var(--card-hover-bg);
@@ -297,6 +299,65 @@ p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px; max-w
         inset -4px -4px 10px var(--neumo-light),
         inset 5px 5px 12px var(--neumo-dark);
     transform: translateY(0);
+}
+
+/* Bottom-right cutout + circular action button */
+.cutout-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90px;
+    height: 90px;
+    background-color: var(--bg);
+    border-top-left-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        -4px -4px 10px var(--neumo-light),
+        5px 5px 12px var(--neumo-dark);
+}
+.cutout-wrapper::before,
+.cutout-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+.cutout-wrapper::before {
+    top: -30px;
+    right: 0;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 0 10px var(--bg);
+}
+.cutout-wrapper::after {
+    bottom: 0;
+    left: -30px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 0 10px var(--bg);
+}
+
+.action-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: none;
+    background: var(--surface);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        -3px -3px 7px var(--neumo-light),
+        4px 4px 9px var(--neumo-dark);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover .action-btn {
+    transform: scale(1.08);
+    box-shadow:
+        -4px -4px 9px var(--neumo-light),
+        5px 5px 11px var(--neumo-dark);
 }
 .card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 6px; }
 .card p { font-size: 0.85rem; margin-bottom: 10px; }
