@@ -452,6 +452,54 @@ p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px; max-w
 .post-title { font-weight: 550; font-size: 0.95rem; }
 .post-date { font-family: 'SF Mono', monospace; font-size: 0.75rem; color: #999; }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.pagination button {
+    border: none;
+    background: var(--surface);
+    color: var(--text-secondary);
+    min-width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow:
+        -2px -2px 5px var(--neumo-light),
+        3px 3px 6px var(--neumo-dark);
+    transition: box-shadow 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+.pagination button:hover {
+    color: var(--text);
+    box-shadow:
+        -3px -3px 8px var(--neumo-light),
+        5px 5px 12px var(--neumo-dark);
+}
+.pagination button:active {
+    background: var(--card-active-bg);
+    box-shadow:
+        inset -1px -1px 3px var(--neumo-light),
+        inset 2px 2px 4px var(--neumo-dark);
+}
+.pagination button.active {
+    background: var(--card-active-bg);
+    color: var(--text);
+    box-shadow:
+        inset -1px -1px 3px var(--neumo-light),
+        inset 2px 2px 4px var(--neumo-dark);
+}
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: default;
+    box-shadow: none;
+}
+
 footer {
     text-align: center;
     padding: 40px 24px;

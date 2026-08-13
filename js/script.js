@@ -41,6 +41,53 @@
         console.log('Profile image loaded from assets');
     }
 
+    // ── Blog pagination ────────────────────────
+    const blogItems = document.querySelectorAll('.blog-list li');
+    const blogPagination = document.getElementById('blogPagination');
+    const perPage = 10;
+
+    if (blogItems.length && blogPagination) {
+        const pageCount = Math.ceil(blogItems.length / perPage);
+        let currentPage = 1;
+
+        function renderBlogPage(page) {
+            currentPage = page;
+            blogItems.forEach((item, i) => {
+                const pageNum = Math.floor(i / perPage) + 1;
+                item.style.display = (pageNum === page) ? '' : 'none';
+            });
+            renderPaginationButtons();
+        }
+
+        function renderPaginationButtons() {
+            let html = '<button class="page-prev" data-page="prev" aria-label="Previous page">‹</button>';
+            for (let i = 1; i <= pageCount; i++) {
+                const active = i === currentPage ? ' active' : '';
+                html += `<button class="page-num${active}" data-page="${i}">${i}</button>`;
+            }
+            html += '<button class="page-next" data-page="next" aria-label="Next page">›</button>';
+            blogPagination.innerHTML = html;
+
+            const prevBtn = blogPagination.querySelector('.page-prev');
+            const nextBtn = blogPagination.querySelector('.page-next');
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage === pageCount;
+        }
+
+        blogPagination.addEventListener('click', (e) => {
+            const btn = e.target.closest('button');
+            if (!btn) return;
+            const target = btn.getAttribute('data-page');
+            let next = currentPage;
+            if (target === 'prev') next = currentPage - 1;
+            else if (target === 'next') next = currentPage + 1;
+            else next = parseInt(target, 10);
+            if (next >= 1 && next <= pageCount) renderBlogPage(next);
+        });
+
+        renderBlogPage(1);
+    }
+
     // ── Mobile menu ──────────────────────────
     const menuToggle = document.getElementById('menuToggle');
     const mainNav = document.getElementById('mainNav');
