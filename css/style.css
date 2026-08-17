@@ -39,7 +39,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-    font-family: 'Inter', 'SF Pro Display', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Open Sans', 'Inter', 'SF Pro Display', 'Segoe UI', system-ui, -apple-system, sans-serif;
     background-color: var(--bg);
     color: var(--text);
     line-height: 1.7;
@@ -136,13 +136,12 @@ input:checked + .slider {
     transform: translateX(22px);
 }
 .switch-icon {
-    font-size: 0.8rem;
     color: var(--text-secondary);
     transition: color 0.3s;
     user-select: none;
 }
-.switch-icon.sun { margin-right: 2px; }
-.switch-icon.moon { margin-left: 2px; }
+.switch-icon.sun { margin-right: 3px; }
+.switch-icon.moon { margin-left: 3px; }
 
 /* Mobile menu toggle */
 .menu-toggle {
