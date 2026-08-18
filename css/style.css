@@ -65,8 +65,9 @@ header {
     padding: 0 24px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     height: 56px;
+    position: relative;
 }
 
 nav ul {
@@ -142,6 +143,13 @@ input:checked + .slider {
 }
 .switch-icon.sun { margin-right: 3px; }
 .switch-icon.moon { margin-left: 3px; }
+
+.switch-item {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /* Mobile menu toggle */
 .menu-toggle {
@@ -535,4 +543,8 @@ footer .social-links a:hover { color: var(--text); }
     }
     nav ul.open { transform: translateX(0); }
     .menu-toggle { display: flex; }
+    .switch-item {
+        position: static;
+        transform: none;
+    }
 }
