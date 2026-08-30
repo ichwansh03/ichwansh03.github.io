@@ -497,8 +497,8 @@ p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px; max-w
 .slide-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-top: 12px;
+    gap: 20px;
+    margin-top: 16px;
 }
 .slide-item {
     display: flex;
@@ -518,9 +518,9 @@ p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px; max-w
 .slide-item:hover {
     background: var(--card-hover-bg);
     box-shadow:
-        -12px -12px 30px var(--neumo-light),
-        14px 14px 36px var(--neumo-dark);
-    transform: translateX(3px);
+        -8px -8px 20px var(--neumo-light),
+        10px 10px 24px var(--neumo-dark),
+        0px 0px 30px 1px rgba(0, 228, 124, 0.30);
 }
 .slide-item:active {
     background: var(--card-active-bg);
