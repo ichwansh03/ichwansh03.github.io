@@ -1,5 +1,5 @@
 (function() {
-    const themeSwitch = document.getElementById('themeSwitch');
+    const themeSwitch = document.getElementById('input');
     const htmlElement = document.documentElement;
     const storageKey = 'portfolio-theme';
 

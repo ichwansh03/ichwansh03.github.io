@@ -23,19 +23,31 @@
                     <li><a href="#blogs">Blogs</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li class="switch-item">
-                        <div class="switch-wrapper">
-                            <svg class="switch-icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
-                                <circle cx="12" cy="12" r="4"></circle>
-                                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
-                            </svg>
-                            <label class="switch-label" for="themeSwitch">
-                                <input type="checkbox" id="themeSwitch">
-                                <span class="slider"></span>
-                            </label>
-                            <svg class="switch-icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
-                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                            </svg>
-                        </div>
+                        <label class="switch" for="input">
+                            <input type="checkbox" id="input">
+                            <div class="slider round">
+                                <div class="sun-moon">
+                                    <svg id="moon-dot-1" viewBox="0 0 10 10"><circle class="moon-dot" cx="5" cy="5" r="5"/></svg>
+                                    <svg id="moon-dot-2" viewBox="0 0 10 10"><circle class="moon-dot" cx="5" cy="5" r="5"/></svg>
+                                    <svg id="moon-dot-3" viewBox="0 0 10 10"><circle class="moon-dot" cx="5" cy="5" r="5"/></svg>
+                                </div>
+                                <div class="stars">
+                                    <svg id="star-1" class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+                                    <svg id="star-2" class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+                                    <svg id="star-3" class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+                                    <svg id="star-4" class="star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+                                </div>
+                                <svg id="light-ray-1" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/></svg>
+                                <svg id="light-ray-2" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/></svg>
+                                <svg id="light-ray-3" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/></svg>
+                                <svg class="cloud-light" id="cloud-1" viewBox="0 0 100 40"><path d="M20 35 Q30 10 50 25 Q60 5 80 20 Q100 10 95 35 Z"/></svg>
+                                <svg class="cloud-light" id="cloud-2" viewBox="0 0 100 40"><path d="M20 35 Q30 10 50 25 Q60 5 80 20 Q100 10 95 35 Z"/></svg>
+                                <svg class="cloud-light" id="cloud-3" viewBox="0 0 100 40"><path d="M20 35 Q30 10 50 25 Q60 5 80 20 Q100 10 95 35 Z"/></svg>
+                                <svg class="cloud-dark" id="cloud-4" viewBox="0 0 100 40"><path d="M20 35 Q30 10 50 25 Q60 5 80 20 Q100 10 95 35 Z"/></svg>
+                                <svg class="cloud-dark" id="cloud-5" viewBox="0 0 100 40"><path d="M20 35 Q30 10 50 25 Q60 5 80 20 Q100 10 95 35 Z"/></svg>
+                                <svg class="cloud-dark" id="cloud-6" viewBox="0 0 100 40"><path d="M20 35 Q30 10 50 25 Q60 5 80 20 Q100 10 95 35 Z"/></svg>
+                            </div>
+                        </label>
                     </li>
                 </ul>
             </nav>
@@ -50,7 +62,7 @@
                      alt="Profile of Ichwan Sholihin" class="hero-avatar" id="profileImage" loading="eager">
             </div>
             <h1>Ichwan Sholihin</h1>
-            <p class="tagline">Software developer with 3+ years delivering scalable backend systems and measurable business impact across Java, Kotlin, and Salesforce ecosystems.</p>
+            <p class="tagline">Software developer with 2+ years delivering scalable backend systems and measurable business impact across Java, Kotlin, and Salesforce ecosystems.</p>
             
             <div class="social-row">
                 <a href="https://github.com/ichwansh03" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
@@ -138,7 +150,7 @@
         <section id="about-detail">
             <span class="section-label">About</span>
             <h2>I turn ideas into reliable software.</h2>
-            <p>A software developer with over three years of experiences, specializing in building scalable and secure enterprise systems using Java, Kotlin, and Salesforce. The journey began as a university student in 2019 then joining in forth semester as lecture assistant and instructor at <a href="https://www.teknokrat.ac.id" target="_blank" rel="noopener noreferrer">Universitas Teknokrat Indonesia</a>. Graduated in 2023 with GPA 3.70/4.00 <a href="https://drive.google.com/file/d/17iEuDgJ_ICTb_SFpNcSzo5rhLZLWyzIo/view" target="_blank" rel="noopener noreferrer">(view transcript)</a>, followed by an apprenticeship at <a href="https://www.code.id" target="_blank" rel="noopener noreferrer">CODE ID</a> as a backend developer contributing to an insurance platform built with Spring Boot and Quarkus, an experience that strengthened technical foundations in code structure, algorithmic thinking, and full-stack collaboration.</p>
+            <p>A software developer with over two years of experiences, specializing in building scalable and secure enterprise systems using Java, Kotlin, and Salesforce. The journey began as a university student in 2019 then joining in forth semester as lecture assistant and instructor at <a href="https://www.teknokrat.ac.id" target="_blank" rel="noopener noreferrer">Universitas Teknokrat Indonesia</a>. Graduated in 2023 with GPA 3.70/4.00 <a href="https://drive.google.com/file/d/17iEuDgJ_ICTb_SFpNcSzo5rhLZLWyzIo/view" target="_blank" rel="noopener noreferrer">(view transcript)</a>, followed by an apprenticeship at <a href="https://www.code.id" target="_blank" rel="noopener noreferrer">CODE ID</a> as a backend developer contributing to an insurance platform built with Spring Boot and Quarkus, an experience that strengthened technical foundations in code structure, algorithmic thinking, and full-stack collaboration.</p>
             <p>Currently serving as a Software Developer at <a href="https://www.axa-mandiri.co.id" target="_blank" rel="noopener noreferrer">AXA Mandiri Financial Services</a>, with several high-impact backend initiatives delivered in support of digital transformation. A microservices-based migration of customer reporting from RPA to REST services was led, utilizing Apache Kafka and asynchronous Salesforce integrations, reducing annual licensing costs by 99.5% (from IDR 2 billion to IDR 10 million) while improving processing efficiency by 70%. Additional contributions include automation systems for internal policy and tax document processes with measurable annual savings, Salesforce reporting and call-handling enhancements that significantly reduced agent workload, remediation of Log4j vulnerabilities alongside the security team, and modernization of legacy SOAP-based systems into RESTful APIs.</p>
             <p>Core technical expertise spans backend service development using Spring Boot and Quarkus across several microservices projects, Kotlin for Android-based mobile development, and proficiency in databases including MySQL, PostgreSQL, MSSQL, and MongoDB. Experience extends to secure API development, JWT authentication, API Gateway/Service Discovery, Docker-based cloud deployment, Apache Kafka streaming, and Salesforce CRM development using Apex, Visualforce and Lightning Web Components, complemented by open-source contributions on GitHub and knowledge shared through published articles on Medium. In addition also active as a mentor for the Islamic student association <a href="https://www.instagram.com/rohissman43jkt/" target="_blank" rel="noopener noreferrer">(Rohis) SMAN 43 Jakarta</a>.</p>
         </section>
